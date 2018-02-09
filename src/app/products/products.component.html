@@ -43,7 +43,8 @@
                         <td>{{product.productCode|lowercase}}</td>
                         <td>{{product.releaseDate}}</td>
                         <td>{{product.price|currency:'GBP'}}</td>
-                        <edu-star [rating]="product.starRating"></edu-star>
+                        <edu-star [rating]="product.starRating"
+                        (ratingClicked)="onRatingClicked($event)"></edu-star>
 
                     </tr>
                 </tbody>
