@@ -19,6 +19,6 @@ export class ProductService{
     }
 
     private handleError(error:Response){
-        return Observable.throw(error.statusText)
+        return Observable.throw(error.statusText||"Server Error")
     }
 }

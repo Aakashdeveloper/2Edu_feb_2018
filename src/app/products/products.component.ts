@@ -33,6 +33,7 @@ export class ProductComponent implements OnInit{
         onRatingClicked(message:string):void{
             this. title="*******PRODUCT LIST******************"+message
         }
+        
 }
 
 /*
